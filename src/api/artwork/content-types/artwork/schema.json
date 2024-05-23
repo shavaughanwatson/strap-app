@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artworks",
+  "info": {
+    "singularName": "artwork",
+    "pluralName": "artworks",
+    "displayName": "Artwork",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Author": {
+      "type": "string",
+      "default": "Admin",
+      "required": true
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Hashtags": {
+      "type": "json"
+    },
+    "Likes": {
+      "type": "integer",
+      "default": 0
+    },
+    "Comments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comment.comments"
+    },
+    "Share": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shareurl.share-posts"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Rock & Minerals",
+        "Geological Landscapes",
+        "Fossil Art",
+        "Geological Abstracts",
+        "Meteorite and Space Geology"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Source": {
+      "type": "string"
+    }
+  }
+}

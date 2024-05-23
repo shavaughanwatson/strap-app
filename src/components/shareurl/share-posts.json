@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shareurl_share_posts",
+  "info": {
+    "displayName": "SharePosts",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ShareUrl": {
+      "type": "string"
+    }
+  }
+}

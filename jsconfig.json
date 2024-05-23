@@ -1,8 +1,20 @@
 {
   "compilerOptions": {
-    "moduleResolution": "nodenext",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
     "target": "ES2021",
     "checkJs": true,
-    "allowJs": true
-  }
+    "allowJs": true,
+    "types": [
+      "node",
+      "istanbul-lib-report",
+      "jest",
+      "uglify-js",
+      "webpack-sources"
+    ]
+  },
+  "include": [
+    "src", // Adjust this to your source directory
+    "types" // This can include a custom types directory if you have one
+  ]
 }

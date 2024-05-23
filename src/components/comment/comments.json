@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_comment_comments",
+  "info": {
+    "displayName": "Comments",
+    "icon": "discuss",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Comment": {
+      "type": "text"
+    },
+    "Likes": {
+      "type": "integer",
+      "default": 0
+    },
+    "Author": {
+      "type": "string"
+    },
+    "Posted": {
+      "type": "datetime"
+    }
+  }
+}

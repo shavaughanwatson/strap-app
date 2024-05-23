@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_hashtag_hashtags",
+  "info": {
+    "displayName": "Hashtags",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "Hashtag": {
+      "type": "string"
+    }
+  }
+}
